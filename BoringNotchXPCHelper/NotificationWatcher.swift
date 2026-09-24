@@ -46,6 +46,7 @@ final class NotificationWatcher {
     private var observerRunLoop: AXObserverRunLoop?
     private var pollTimer: DispatchSourceTimer?
     private var liveTokens = Set<String>()
+    private var mirroredTokens = NotificationTokenLedger()
     private var allowedBundleIDs = Set<String>()
     private var mirrorAllApps = false
     private var parkedWindowByToken: [String: Int] = [:]
@@ -190,6 +191,7 @@ final class NotificationWatcher {
                     guard let token = banner[kAXIdentifierAttribute] as? String else { continue }
                     seen.insert(token)
                     guard !liveTokens.contains(token) else { continue }
+                    guard !mirroredTokens.contains(token) else { continue }
                     let notification = capture(banner, token: token)
                     guard mirrorAllApps || isAllowed(notification) else {
                         continue
@@ -198,6 +200,7 @@ final class NotificationWatcher {
                         NSLog("[boringNotch] could not hide notification banner \(token)")
                         continue
                     }
+                    mirroredTokens.record(token)
                     liveTokens.insert(token)
                     onBanner?(notification)
                 }

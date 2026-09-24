@@ -29,6 +29,7 @@ final class SystemNotificationManager: ObservableObject {
     private var dismissTask: Task<Void, Never>?
     private var observers: [NSObjectProtocol] = []
     private var isUserPresent = false
+    private var mirrored = NotificationTokenLedger(capacity: 128)
 
     private init() {
         observers = [
@@ -110,6 +111,7 @@ final class SystemNotificationManager: ObservableObject {
 
     private func add(_ payload: [String: String]) {
         guard let token = payload["token"], !token.isEmpty else { return }
+        guard !mirrored.contains(token) else { return }
         let notification = SystemNotification(
             id: token,
             appName: nonEmpty(payload["appName"]),
@@ -120,6 +122,7 @@ final class SystemNotificationManager: ObservableObject {
             receivedAt: Date()
         )
         guard isAllowed(notification) else { return }
+        mirrored.record(token)
         guard activeNotification == nil else {
             guard isUserPresent else {
                 show(notification)
