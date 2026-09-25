@@ -2738,7 +2738,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reculer 15 s"
+            "value" : "Reculer de 15 s"
           }
         },
         "it" : {
@@ -8127,7 +8127,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Taille personnalisée de l'encoche - %@"
+            "value" : "Taille de l'encoche - %@"
           }
         },
         "he" : {
@@ -13275,7 +13275,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haut"
+            "value" : "Élevé"
           }
         },
         "he" : {
@@ -14839,7 +14839,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bas"
+            "value" : "Faible"
           }
         },
         "he" : {
@@ -16515,7 +16515,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Moyen"
+            "value" : "Moyenne"
           }
         },
         "he" : {
@@ -22887,7 +22887,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nécessite %@. Seules les bannières visibles sont en récupérées."
+            "value" : "Nécessite %@. Seules les bannières visibles sont récupérées."
           }
         },
         "pt-BR" : {
@@ -22950,7 +22950,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nécessite macOS 14.2 ou ultérieur. Mettre à jour macOS pour activer la forme d'onde audio en temps réel."
+            "value" : "Nécessite macOS 14.2 ou version ultérieure. Mettez à jour macOS pour activer la forme d'onde audio en temps réel."
           }
         },
         "it" : {
@@ -26148,7 +26148,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Afficher les ombres"
+            "value" : "Activer l'effet de lueur"
           }
         },
         "it" : {
@@ -26324,7 +26324,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Affiche une encoche moins large avec seulement le lecteur de musique — aucun onglet, calendrier ou miroir."
+            "value" : "Le mode compact affiche une encoche moins large avec seulement le lecteur de musique — aucun onglet, calendrier ou miroir."
           }
         },
         "it" : {
@@ -28012,7 +28012,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activer/désactiver l'ouverture de l'encoche:"
+            "value" : "Activer/désactiver l'ouverture de l'encoche :"
           }
         },
         "he" : {
@@ -28130,7 +28130,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activer/désactiver l'aperçu furtif:"
+            "value" : "Activer/désactiver l'aperçu furtif :"
           }
         },
         "he" : {
@@ -28248,7 +28248,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Glisser deux doigts vers le haut sur l'encoche pour fermer, glisser deux doigts vers le bas sur l'encoche pour l'ouvrir lorsque l'option **Ouvrir l'encoche au survol** est désactivée"
+            "value" : "Lorsque l'option **Ouvrir l'encoche au survol** est désactivée, balayez deux doigts vers le bas ou le haut pour ouvrir ou fermer l'encoche "
           }
         },
         "he" : {
@@ -29685,7 +29685,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Infos de la version"
+            "value" : "Informations sur la version"
           }
         },
         "he" : {
